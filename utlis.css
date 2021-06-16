@@ -1,0 +1,63 @@
+@media screen and (max-width: 900px){
+    body{
+display: flex;
+flex-direction: column;
+    }
+    /* .widget ,.widget_input, .widget_input input, .widget_container, .search_widget{
+        -ms-flex-order: 4;
+        width: 100%;
+        flex-direction: column;
+    }
+    .sidebar{
+        -ms-flex-order: 1;
+        flex-direction: column;
+        
+    }
+    .dsc{
+        -ms-flex-order: 2;
+        flex-direction: column;
+    }
+    .content{
+        -ms-flex-order: 3;
+        flex-direction: column;
+    }
+    .twitter-tweet{
+        width: 0px;
+        height: 0px;
+        flex-direction: column;
+    } */
+    .sidebar{
+        flex-direction: column;
+        /* display:none; */
+        width: 100%;
+    }
+    .sidebarOptions{
+        flex-direction: row;
+        width: 100%;
+    }
+    .dsc ,.container{
+        flex-direction: column;
+    }
+    .widget{
+        flex-direction: column;
+        display: none;
+        
+    }
+    .widget_input{
+        display: none;
+    }
+    .widget_input input{
+        display: none;
+    }
+    .widget_container{
+        display: none;
+    }
+    .search_widget{
+        display: none;
+    }
+
+    .twitter-tweet{
+        display: flex;
+        justify-content: flex-start;
+    }
+}

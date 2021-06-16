@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&family=Roboto:wght@100&family=Saira+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&family=Lato&family=Roboto:wght@100&family=Saira+Condensed:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    --twitter-color: #50b7f5;
+    --twitter-background: #e6ecf0;
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 20px;
+    /* height: 3150px; */
+}
+.fa-twitter{
+    color: var(--twitter-color);
+    font-size: 35px;
+}
+.sidebar{
+    border-right: 2px solid var(--twitter-background);
+    flex: 0.2;
+     max-width: 250px;
+     padding-left: 10px;
+     padding-right: 20px;
+     height: 3150px;
+
+}
+.sidebarOption{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.sidebarOption:hover{
+    background-color: var(--twitter-background);
+    border-radius: 50px;
+    color: var(--twitter-color);
+    transform: color 100ms ease-out; 
+}
+.sidebarOption .material-icons, .fa-twitter{
+    padding: 20px;
+}
+.sidebarOption h2{
+    font-weight: 1000;
+    font-size: 20px;
+    margin: 20px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.sidebar_tweet{
+    width: 100%;
+    background-color: var(--twitter-color);
+    color: white;
+    font-weight: 900;
+    border-radius: 50px;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    cursor: pointer;
+}
+.dsc{
+    display: flex;
+    flex-direction: column;
+    /* font-family: 'Baloo Tammudu 2', cursive; */
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 0px ;
+    width: 100%;
+    min-height: 45px;
+    /* height: 3150px; */
+    flex: 0.7;
+    border-bottom: 2px solid var(--twitter-background);
+    border-right: 2px solid var(--twitter-background);
+    
+     
+}
+ /* .dsc::-webkit-scrollbar{
+    
+    color: white;
+    scrollbar-width: 10px;
+    display: none;
+
+} 
+.dsc::-webkit-scrollbar-thumb{
+    background-color:var(--twitter-color);
+} */
+.dsc .material-icons{
+    margin-top: 15px;
+    padding-left: 6px;    
+    width: 31px;
+}
+/* .dsc .material-icons{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transform: color 100ms ease-out; 
+} */
+.dsc-text{
+    margin-top: 7px;
+    margin-left: 7px;
+    position: relative;
+    top: -38px;
+    left: 37px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    
+}
+.dsc img{
+    display: flex;
+    width: 100%;
+    height: 215px;
+    margin-top: -44px;
+    /* border: 2px solid black; */
+}
+.logo{
+    position: relative;
+top: 0px;
+width: 153px;
+height: 116px;
+margin-left: 16px;
+
+}
+.logo img{
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    height: 135px;
+    width: 135px;
+}
+.buttons{
+    display: flex;
+flex-direction: row;
+justify-content: end;
+margin: 5px;
+height: 35px;
+
+}
+.message-option{
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid var(--twitter-color);
+    font-family: 'Baloo Tammudu 2', cursive;
+    position: relative;
+    right: 20px;
+}
+.follow{
+    font-family: 'Baloo Tammudu 2', cursive;
+    border-radius: 14px;
+    width: 80px;
+    background-color: white;
+    border: 2px solid var(--twitter-color);
+    font-size: 15px;
+}
+.dsc-nametag{
+    font-size: 28px;
+    font-size: 28px;
+margin-top: -42px;
+margin-left: 10px;
+margin-bottom: -8px;
+font-family: 'Baloo Tammudu 2', cursive;
+}
+.dsc-account{
+    margin-left: 10px;
+    opacity: 0.3;
+    font-weight: lighter;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.discription{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.info{
+    display: flex;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.location{
+    padding-right: 30px;
+}
+.link{
+    padding-right: 30px;
+}
+.following{
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+.tweet-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    border-bottom: 2px solid var(--twitter-background);
+opacity: 0.9;
+border-right: 2px solid var(--twitter-background);
+}
+.tweets{
+    color: var(--twitter-color) !important;
+}
+ .tweets:hover{
+    color: var(--twitter-color);
+    cursor: pointer;
+}
+.tweets-replies:hover{
+    color: var(--twitter-color);
+    cursor: pointer;
+}
+.media:hover{
+    color: var(--twitter-color);
+    cursor: pointer;
+}
+.likes:hover{
+    color: var(--twitter-color);
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    border-right: 2px solid var(--twitter-background);
+    padding-right: 50px;
+}
+
+.smallIcon1 img{
+    width: 42px;
+height: 42px;
+border-radius: 100%;
+position: relative;
+margin-top: 10px;
+margin-left: 10px;
+}
+.text-logo1{
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    top: -50px;
+    left: 45px;
+}
+.tweetno1{
+    margin-top: 10px;
+padding-left: 65px;
+position: relative;
+top: -40px;
+border-bottom: 2px solid var(--twitter-background);
+}
+
+.tweet1_like{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.retweet:hover{
+    color: rgb(75, 216, 75);
+}
+.reply:hover{
+    color: var(--twitter-color);
+}
+.like:hover{
+    color: rgb(255, 0, 0);
+}
+.share:hover{
+    color: var(--twitter-color);
+    }
+    .smallIcon2 img{
+        width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+top: -28px;
+    }
+    .text-logo2{
+        margin-top: -10px;
+        padding-left: 20px;
+        position: relative;
+        top: -50px;
+        left: 45px;
+    }
+    .tweetno2{
+        margin-top: 10px;
+    padding-left: 65px;
+    position: relative;
+    top: -40px;
+    
+    }
+    .tweet2_like{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+top: 35px;
+border-bottom: 2px solid var(--twitter-background);
+margin-left: 0px;
+margin-bottom: 20px;
+        
+    }
+    
+    .smallIcon3 img{
+        width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+top: -20px;
+    }
+    .text-logo3{
+        margin-top: -10px;
+        padding-left: 20px;
+        position: relative;
+        top: -50px;
+        left: 45px;
+    }
+    .tweetno3{
+        margin-top: 10px;
+    padding-left: 65px;
+    position: relative;
+    top: -40px;
+    }
+    .tweet3_like{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+top: 35px;
+border-bottom: 2px solid var(--twitter-background);
+margin-left: 0px;
+margin-bottom: 20px;
+    }
+    .smallIcon4 img{
+        width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+top: -20px;
+    }
+    .text-logo4{
+        margin-top: -10px;
+        padding-left: 20px;
+        position: relative;
+        top: -50px;
+        left: 45px;
+    }
+    .tweetno4{
+        margin-top: 10px;
+    padding-left: 65px;
+    position: relative;
+    top: -40px;
+    }
+    .tweet4_like{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+top: 35px;
+border-bottom: 2px solid var(--twitter-background);
+margin-left: 0px;
+margin-bottom: 20px;
+
+    }
+    .smallIcon5 img{
+        width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+top: -20px;
+    }
+    .text-logo5{
+        margin-top: -10px;
+        padding-left: 20px;
+        position: relative;
+        top: -50px;
+        left: 45px;
+    }
+    .tweetno5{
+        margin-top: 10px;
+    padding-left: 65px;
+    position: relative;
+    top: -40px;
+    }
+    .tweet5_like{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+top: 35px;
+border-bottom: 2px solid var(--twitter-background);
+margin-left: 0px;
+margin-bottom: 30px;
+    }
+    .widget{
+         display: flex; 
+         flex: 0.1; 
+        font-family: 'Baloo Tammudu 2', cursive;
+        width: 360px;
+    }
+    .widget_input{
+display: flex;
+align-items: center;
+background-color: var(--twitter-background);
+padding: 10px;
+border-radius: 200px;
+margin-top: 10px;
+margin-left: 20px;
+    }
+    .widget_input input{
+        border: none;
+        background-color: var(--twitter-background);
+        outline: none;
+    }
+    .widget_container{
+        font-family: 'Baloo Tammudu 2', cursive;
+        margin-top: 15px;
+        margin-left: 20px;
+        padding: 20px;
+        background-color: #f5f8fa;
+        border-radius: 20px;
+        max-width: 350px;
+    }
+    .search_widget{
+color: gray;
+
+    }
