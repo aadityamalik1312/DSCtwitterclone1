@@ -78,27 +78,13 @@ cursor: pointer;
     
      
 }
- /* .dsc::-webkit-scrollbar{
-    
-    color: white;
-    scrollbar-width: 10px;
-    display: none;
 
-} 
-.dsc::-webkit-scrollbar-thumb{
-    background-color:var(--twitter-color);
-} */
 .dsc .material-icons{
     margin-top: 15px;
     padding-left: 6px;    
     width: 31px;
 }
-/* .dsc .material-icons{
-    background-color: var(--twitter-background);
-    border-radius: 30px;
-    color: var(--twitter-color);
-    transform: color 100ms ease-out; 
-} */
+
 .dsc-text{
     margin-top: 7px;
     margin-left: 7px;
